@@ -1,0 +1,258 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arbórea | Muebles Montessori</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+   
+
+    <!-- HEADER -->
+    <header id="inicio">
+
+        <nav>
+
+            <!-- LOGO -->
+            <a href="#inicio">
+
+                <img
+                    src="https://www.arborea.com.pe/wp-content/uploads/2026/04/LOGOTIPO-ARBOREA.png"
+                    class="main-logo"
+                    alt="Arbórea">
+
+            </a>
+
+            <!-- MENU -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#productos">
+                        Productos
+                    </a>
+                </li>
+
+                <li>
+
+                    <a href="#contacto">
+
+                        <button class="btn-contact">
+                            Contacto
+                        </button>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-split">
+
+        <div class="hero-text">
+
+            <h1>
+                Muebles Montessori
+                <em>para crecer jugando</em>
+            </h1>
+
+            <div class="hero-tags">
+
+                <span>Montessori</span>
+
+                <span>Waldorf</span>
+
+                <span>Hecho en Perú</span>
+
+                <span>Madera Natural</span>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image-container">
+
+            <img
+                class="hero-img"
+                src="https://www.arborea.com.pe/wp-content/uploads/2026/04/Torre-de-Aprendizaje_natural_5.webp"
+                alt="Portada">
+
+        </div>
+
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="about-section" id="nosotros">
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img
+                    src="https://www.arborea.com.pe/wp-content/uploads/2026/04/Cama-Evolutiva-Eve2.webp"
+                    alt="Nosotros">
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="subtitle">
+                    SOBRE NOSOTROS
+                </span>
+
+                <h2 class="title-accent">
+                    Diseñamos espacios que inspiran autonomía y creatividad
+                </h2>
+
+                <h3>
+                    MOBILIARIO INFANTIL MONTESSORI
+                </h3>
+
+                <p>
+                    En Arbórea creamos muebles infantiles inspirados en la metodología Montessori y Waldorf,
+                    priorizando la seguridad, funcionalidad y el desarrollo independiente de los niños.
+                </p>
+
+                <p>
+                    Cada pieza es fabricada cuidadosamente utilizando materiales de alta calidad y acabados suaves,
+                    pensados para acompañar cada etapa del crecimiento infantil.
+                </p>
+
+                <a href="#productos" class="cta-link">
+                    Ver catálogo completo
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section class="gallery-section" id="productos">
+
+        <div class="section-header">
+
+            <h2>Nuestros Productos</h2>
+
+            <div>
+
+                <button class="filter-btn active" data-filter="all">
+                    Todos
+                </button>
+
+                <button class="filter-btn" data-filter="camas">
+                    Camas
+                </button>
+
+                <button class="filter-btn" data-filter="desarrollo">
+                    Desarrollo
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+
+    </section>
+
+    <!-- MODAL -->
+    <div id="product-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-modal">&times;</span>
+
+            <div class="modal-body">
+
+                <div class="modal-image">
+
+                    <img id="modal-img" src="" alt="">
+
+                </div>
+
+                <div class="modal-info">
+
+                    <h2 id="modal-title"></h2>
+
+                    <p id="modal-category"></p>
+
+                    <p class="modal-description">
+                        Mobiliario artesanal diseñado bajo principios Montessori/Waldorf,
+                        priorizando la seguridad y autonomía de los niños.
+                    </p>
+
+                    <a
+                        id="wsp-link"
+                        href="#"
+                        target="_blank"
+                        class="btn-wsp">
+
+                        Consultar por WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+
+        <img
+            src="https://www.arborea.com.pe/wp-content/uploads/2026/04/LOGOTIPO-ARBOREA.png"
+            alt="Arbórea"
+            style="height:70px;margin-bottom:20px;">
+
+        <p>
+            © 2026 Arbórea - Mobiliario Montessori
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
